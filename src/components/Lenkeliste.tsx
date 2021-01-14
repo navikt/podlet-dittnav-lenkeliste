@@ -1,5 +1,6 @@
 import React from "react";
 import { Normaltekst } from "nav-frontend-typografi";
+import "./Lenkeliste.less";
 
 interface Link {
   tittel: string;

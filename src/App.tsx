@@ -1,9 +1,8 @@
 import React from "react";
-import "./App.css";
 import useSWR from "swr";
 import { fetcher, OppfolgingResponse, oppfolgingUrl } from "./api";
-import Lenkeliste from "./components/Lenkeliste";
 import { generelleLenker, oppfolgingsLenker } from "./lenker/lenker";
+import Lenkeliste from "./components/Lenkeliste";
 
 const App = () => {
   const { data: oppfolging } = useSWR<OppfolgingResponse>(oppfolgingUrl, fetcher);
