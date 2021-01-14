@@ -1,21 +1,21 @@
+import React from "react";
 import "./App.css";
-import Panel from "nav-frontend-paneler";
-import Navn from "./components/navn";
-import Status from "./components/status";
 import useSWR from "swr";
-import { AuthResponse, authUrl, fetcher } from "./api";
+import { fetcher, OppfolgingResponse, oppfolgingUrl } from "./api";
+import Lenkeliste from "./components/Lenkeliste";
+import { generelleLenker, oppfolgingsLenker } from "./lenker/lenker";
 
-function App() {
-  const { data: auth } = useSWR<AuthResponse>(authUrl, fetcher);
+const App = () => {
+  const { data: oppfolging } = useSWR<OppfolgingResponse>(oppfolgingUrl, fetcher);
+  const links = oppfolging?.erBrukerUnderOppfolging ? oppfolgingsLenker : generelleLenker;
 
   return (
-    <div className="podlet-template">
-      <Panel border>
-        <Navn navn={auth?.name} />
-        <Status status={"registrert som arbeidssøker"} />
-      </Panel>
+    <div className="flere-tjenester">
+      <nav className="flere-tjenester__links">
+        <Lenkeliste links={links} />
+      </nav>
     </div>
   );
-}
+};
 
 export default App;

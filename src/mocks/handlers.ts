@@ -1,4 +1,4 @@
 import get from "./msw-utils";
-import auth from "./auth.json";
+import oppfolging from "./oppfolging.json";
 
-export const handlers = [get("https://api.nav.no/innloggingsstatus/auth", auth)];
+export const handlers = [get("https://www.nav.no/person/dittnav-api/oppfolging", oppfolging)];
