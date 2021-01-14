@@ -1,11 +1,5 @@
 import { OPPFOLGING_URL } from "./lenker/urls";
-
-function getEnvironment(): "production" | "development" {
-  if (process.env.NODE_ENV === "production") {
-    return "production";
-  }
-  return "development";
-}
+import getEnvironment from "./utils/environment";
 
 export const fetcher = async (url: string) => {
   const response = await fetch(url, { method: "GET", credentials: "include" });
