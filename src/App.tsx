@@ -1,7 +1,8 @@
 import React from "react";
 import useSWR from "swr";
-import { fetcher, OppfolgingResponse, oppfolgingUrl } from "./api";
+import { fetcher, OppfolgingResponse } from "./api";
 import { generelleLenker, oppfolgingsLenker } from "./lenker/lenker";
+import { oppfolgingUrl } from "./lenker/url";
 import Lenkeliste from "./components/Lenkeliste";
 
 const App = () => {

@@ -1,77 +1,76 @@
-import getEnvironment from "../utils/environment";
 import {
-  AKTIVITETSPLAN_URL,
-  ARBEIDSSOKERREGISTRERING_URL,
-  FORELDREPENGER_URL,
-  FULLMAKTER_URL,
-  MELDEKORT_URL,
-} from "./urls";
-import {
-  PENSJON_URL,
-  UFORETRYGD_URL,
-  PERSONOPPLYSNINGER_URL,
-  SKJEMAER_URL,
-  SOSIALHJELP_URL,
-  STILLINGER_URL,
-} from "./urls";
-import { STILLINGSOK_URL, SYKDOM_I_FAMILIEN_URL, SYKEFRAVAER_URL } from "./urls";
+  aktivitetsplanUrl,
+  arbeidssokerregistreringUrl,
+  foreldrepengerUrl,
+  fullmakterUrl,
+  meldekortUrl,
+  pensjonUrl,
+  personopplysningerUrl,
+  skjemaerUrl,
+  sosialhjelpUrl,
+  stillingerUrl,
+  stillingsokUrl,
+  sykdomIFamilienUrl,
+  sykefravaerUrl,
+  uforetrygdUrl,
+} from "./url";
 
 const lenker = {
   ledigeStillinger: {
     tittel: "Ledige stillinger",
-    url: STILLINGER_URL[getEnvironment()],
+    url: stillingerUrl,
   },
   uforetrygd: {
     tittel: "Uføretrygd",
-    url: UFORETRYGD_URL[getEnvironment()],
+    url: uforetrygdUrl,
   },
   dineForeldrepenger: {
     tittel: "Dine foreldrepenger",
-    url: FORELDREPENGER_URL[getEnvironment()],
+    url: foreldrepengerUrl,
   },
   aktivitetsplan: {
     tittel: "Aktivitetsplan",
-    url: AKTIVITETSPLAN_URL[getEnvironment()],
+    url: aktivitetsplanUrl,
   },
   meldekort: {
     tittel: "Meldekort",
-    url: MELDEKORT_URL[getEnvironment()],
+    url: meldekortUrl,
   },
   personopplysninger: {
     tittel: "Personopplysninger",
-    url: PERSONOPPLYSNINGER_URL[getEnvironment()],
+    url: personopplysningerUrl,
   },
   skjemaer: {
     tittel: "Skjemaer",
-    url: SKJEMAER_URL[getEnvironment()],
+    url: skjemaerUrl,
   },
   dinPensjon: {
     tittel: "Din pensjon",
-    url: PENSJON_URL[getEnvironment()],
+    url: pensjonUrl,
   },
   dineStillingssok: {
     tittel: "Dine stillingssøk",
-    url: STILLINGSOK_URL[getEnvironment()],
+    url: stillingsokUrl,
   },
   registrerDegSomArbeidssoker: {
     tittel: "Registrer deg som arbeidssøker",
-    url: ARBEIDSSOKERREGISTRERING_URL[getEnvironment()],
+    url: arbeidssokerregistreringUrl,
   },
   dittSykefravaer: {
     tittel: "Ditt sykefravær",
-    url: SYKEFRAVAER_URL[getEnvironment()],
+    url: sykefravaerUrl,
   },
   digisos: {
     tittel: "Digisos",
-    url: SOSIALHJELP_URL[getEnvironment()],
+    url: sosialhjelpUrl,
   },
   dineFullmakter: {
     tittel: "Dine fullmakter",
-    url: FULLMAKTER_URL[getEnvironment()],
+    url: fullmakterUrl,
   },
   sykdomIFamilien: {
     tittel: "Din oversikt - Sykdom i familien",
-    url: SYKDOM_I_FAMILIEN_URL[getEnvironment()],
+    url: sykdomIFamilienUrl,
   },
 };
 
