@@ -78,7 +78,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run typeCheck"
+      "pre-push": "npm run typeCheck && npm run test-ci"
     }
   },
   "lint-staged": {
