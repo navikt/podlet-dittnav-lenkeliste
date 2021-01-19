@@ -12,17 +12,19 @@ interface Props {
 }
 
 const Lenkeliste = (props: Props) => (
-  <React.Fragment>
-    {props.links.map((link) => (
-      <div className="flere-tjenester__link-container" key={link.url}>
-        <Normaltekst>
-          <a href={link.url} className="lenke flere-tjenester__link">
-            {link.tittel}
-          </a>
-        </Normaltekst>
-      </div>
-    ))}
-  </React.Fragment>
+  <div className="flere-tjenester">
+    <nav className="flere-tjenester__links">
+      {props.links.map((link) => (
+        <div className="flere-tjenester__link-container" key={link.url}>
+          <Normaltekst>
+            <a href={link.url} className="lenke flere-tjenester__link">
+              {link.tittel}
+            </a>
+          </Normaltekst>
+        </div>
+      ))}
+    </nav>
+  </div>
 );
 
 export default Lenkeliste;
