@@ -13,8 +13,8 @@ const STILLINGER_URL: EnvUrl = {
 };
 
 const OPPFOLGING_URL: EnvUrl = {
-  development: "https://www.nav.no/person/dittnav-api/oppfolging",
-  production: "https://www.nav.no/person/dittnav-api/oppfolging",
+  development: "https://www.dev.nav.no/person/dittnav-api/oppfolging",
+  production: "https://www.dev.nav.no/person/dittnav-api/oppfolging",
 };
 
 const UFORETRYGD_URL: EnvUrl = {
