@@ -7,7 +7,7 @@ import Lenkeliste from "./components/Lenkeliste";
 import { Undertittel } from "nav-frontend-typografi";
 
 const App = () => {
-  const { data: oppfolging } = useSWR<OppfolgingResponse>(oppfolgingUrl, fetcher);
+  const { data: oppfolging } = useSWR<OppfolgingResponse>(oppfolgingUrl, fetcher, { shouldRetryOnError: false });
   const links = oppfolging?.erBrukerUnderOppfolging ? oppfolgingsLenker : generelleLenker;
 
   return (
