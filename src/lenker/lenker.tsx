@@ -69,7 +69,7 @@ const lenker = {
     url: fullmakterUrl,
   },
   sykdomIFamilien: {
-    tittel: "Din oversikt - Sykdom i familien",
+    tittel: "Dine pleiepenger",
     url: sykdomIFamilienUrl,
   },
 };
