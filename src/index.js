@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as Sentry from "@sentry/browser";
 import App from "./App";
-import "./index.css";
 
 if (process.env.NODE_ENV === "development") {
   const { worker } = require("./mocks/browser");

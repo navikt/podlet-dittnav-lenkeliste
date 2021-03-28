@@ -2,16 +2,7 @@ import React from "react";
 import { Normaltekst } from "nav-frontend-typografi";
 import "./Lenkeliste.less";
 
-interface Link {
-  tittel: string;
-  url: string;
-}
-
-interface Props {
-  links: Array<Link>;
-}
-
-const Lenkeliste = (props: Props) => (
+const Lenkeliste = (props) => (
   <div className="flere-tjenester">
     <nav className="flere-tjenester__links">
       {props.links.map((link) => (

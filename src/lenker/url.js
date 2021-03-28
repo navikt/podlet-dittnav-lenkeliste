@@ -1,83 +1,81 @@
-const getEnvironment = (): "production" | "development" => {
+const getEnvironment = () => {
   if (process.env.NODE_ENV === "production") {
     return "production";
   }
   return "development";
 };
 
-type EnvUrl = { development: string; production: string };
-
-const STILLINGER_URL: EnvUrl = {
+const STILLINGER_URL = {
   development: "https://arbeidsplassen.nav.no/stillinger",
   production: "https://arbeidsplassen.nav.no/stillinger",
 };
 
-const OPPFOLGING_URL: EnvUrl = {
+const OPPFOLGING_URL = {
   development: "https://www.dev.nav.no/person/dittnav-api/oppfolging",
   production: "https://www.dev.nav.no/person/dittnav-api/oppfolging",
 };
 
-const UFORETRYGD_URL: EnvUrl = {
+const UFORETRYGD_URL = {
   development: "https://tjenester-q1.nav.no/pselv/publisering/uforetrygd.jsf?context=ut",
   production: "https://www-tjenester.nav.no/pselv/publisering/uforetrygd.jsf?context=ut",
 };
 
-const MELDEKORT_URL: EnvUrl = {
+const MELDEKORT_URL = {
   development: "https://www-q1.nav.no/meldekort/om-meldekort",
   production: "https://www.nav.no/meldekort/om-meldekort",
 };
 
-const FORELDREPENGER_URL: EnvUrl = {
+const FORELDREPENGER_URL = {
   development: "https://foreldrepenger.nav.no",
   production: "https://foreldrepenger.nav.no",
 };
 
-const AKTIVITETSPLAN_URL: EnvUrl = {
+const AKTIVITETSPLAN_URL = {
   development: "https://aktivitetsplan-q.nav.no",
   production: "https://aktivitetsplan.nav.no",
 };
 
-const PERSONOPPLYSNINGER_URL: EnvUrl = {
+const PERSONOPPLYSNINGER_URL = {
   development: "https://www-q1.nav.no/person/personopplysninger",
   production: "https://www.nav.no/person/personopplysninger",
 };
 
-const SKJEMAER_URL: EnvUrl = {
+const SKJEMAER_URL = {
   development: "https://www-q1.nav.no/soknader",
   production: "https://www.nav.no/soknader",
 };
 
-const PENSJON_URL: EnvUrl = {
+const PENSJON_URL = {
   development: "https://tjenester-q1.nav.no/pselv/publisering/dinpensjon.jsf",
   production: "https://www-tjenester.nav.no/pselv/publisering/dinpensjon.jsf",
 };
 
-const STILLINGSOK_URL: EnvUrl = {
+const STILLINGSOK_URL = {
   development: "https://stillingsok.nav.no/pam-stillingsok/lagrede-sok",
   production: "https://stillingsok.nav.no/pam-stillingsok/lagrede-sok",
 };
 
-const ARBEIDSSOKERREGISTRERING_URL: EnvUrl = {
+const ARBEIDSSOKERREGISTRERING_URL = {
   development: "https://veiledearbeidssoker-q.nav.no",
   production: "https://veiledearbeidssoker.nav.no",
 };
 
-const SYKEFRAVAER_URL: EnvUrl = {
+const SYKEFRAVAER_URL = {
   development: "https://www-tjenester.nav.no/sykefravaer",
   production: "https://www-tjenester.nav.no/sykefravaer",
 };
 
-const SOSIALHJELP_URL: EnvUrl = {
+const SOSIALHJELP_URL = {
   development: "https://www.dev.nav.no/sosialhjelp/innsyn",
   production: `https://www.nav.no/sosialhjelp/innsyn`,
 };
 
-const FULLMAKTER_URL: EnvUrl = {
+const FULLMAKTER_URL = {
   development: "https://www.dev.nav.no/person",
   production: "https://www.nav.no/person/pdl-fullmakt-ui",
 };
 
-const SYKDOM_I_FAMILIEN_URL: EnvUrl = {
+const SYKDOM_I_FAMILIEN_URL = {
   development: "https://sif-innsyn.dev.nav.no/familie/sykdom-i-familien/soknad/innsyn",
   production: "https://www.nav.no/familie/sykdom-i-familien/soknad/innsyn",
 };
