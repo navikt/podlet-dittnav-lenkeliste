@@ -11,7 +11,7 @@ const STILLINGER_URL = {
 };
 
 const OPPFOLGING_URL = {
-  development: "https://www.dev.nav.no/person/dittnav-api/oppfolging",
+  development: "https://www.api.nav.no/person/dittnav-api/oppfolging",
   production: "https://www.dev.nav.no/person/dittnav-api/oppfolging",
 };
 
