@@ -1,6 +1,0 @@
-app: podlet-dittnav-lenkeliste
-namespace: personbruker
-team: personbruker
-base_path: "/person/podlet-dittnav-lenkeliste"
-ingresses:
-    - https://person.dev.nav.no/person/podlet-dittnav-lenkeliste
